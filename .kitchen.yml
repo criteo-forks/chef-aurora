@@ -18,6 +18,8 @@ suites:
       aurora:
         scheduler:
           autoinit_db: true
+          app_config:
+            thermos_executor_flags: '--preserve_env'
 
   - name: slave
     run_list:
