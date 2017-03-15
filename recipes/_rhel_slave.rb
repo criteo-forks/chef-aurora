@@ -7,6 +7,7 @@ package 'aurora-executor' do
   if node['aurora']['package']['rhel']['install_method'] == 'rpm'
     source "aurora-executor-#{node['aurora']['version']}.el7.centos.aurora.x86_64.rpm"
   end
+  options node['aurora']['package']['rhel']['options']
   version node['aurora']['version']
 end
 

@@ -5,6 +5,7 @@ package 'aurora-tools' do
       node['aurora']['package']['rhel']['install_method'] == 'rpm'
     source "aurora-tools-#{node['aurora']['version']}.el7.centos.aurora.x86_64.rpm"
   end
+  options node['aurora']['package']['rhel']['options']
   version node['aurora']['version']
 end
 
