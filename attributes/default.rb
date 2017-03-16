@@ -10,8 +10,10 @@ end
 # Installation method can be either:
 # * 'rpm' to install Aurora packages directly from RPM files
 # * 'yum' to install Aurora packages from a yum repository
+# Additional options can be set to the package provider
 default['aurora']['package']['rhel'] = {
-  install_method: 'rpm'
+  install_method: 'rpm',
+  options: nil
 }
 
 # Aurora configuration files are platform dependant
